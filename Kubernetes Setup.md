@@ -4,16 +4,7 @@
 - systemctl enable docker
 - systemctl start docker
   
-# This overwrites any existing configuration in /etc/yum.repos.d/kubernetes.repo V-1.27
-- cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
-[kubernetes]
-name=Kubernetes
-baseurl=https://pkgs.k8s.io/core:/stable:/v1.27/rpm/
-enabled=1
-gpgcheck=1
-gpgkey=https://pkgs.k8s.io/core:/stable:/v1.27/rpm/repodata/repomd.xml.key
-exclude=kubelet kubeadm kubectl cri-tools kubernetes-cni
-EOF
+# https://v1-27.docs.kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
 
 # Install kubelet, kubeadm and kubectl, and enable kubelet to ensure it's automatically started on startup:
 
