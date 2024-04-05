@@ -4,7 +4,8 @@
 - systemctl enable docker
 - systemctl start docker
   
-# https://v1-27.docs.kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
+# Link for install kubeadm kubernetes
+- https://v1-27.docs.kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
 
 # Install kubelet, kubeadm and kubectl, and enable kubelet to ensure it's automatically started on startup:
 
